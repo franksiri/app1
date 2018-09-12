@@ -1,12 +1,12 @@
 const http = require('http');
 const os = require('os');
 
-console.log("My web server starting...");
+console.log("My original web server starting...");
 
 var handler = function(request, response) {  
     console.log("Received request from " + request.connection.remoteAddress);
       response.writeHead(200);  
-      response.end("Hi Guy, You've hit " + os.hostname() 
+      response.end("Hi Comrades, You've hit " + os.hostname() 
       + ", on " + new Date +  "\n");
 };
 
