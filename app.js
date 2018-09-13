@@ -5,7 +5,7 @@ console.log('My original web server starting...')
 
 var handler = function (request, response) {
   console.log('Received request from ' + request.connection.remoteAddress)
-  response.writeHead(404)
+  response.writeHead(200)
   response.end("Eey 'Bro !, You wen heet " + os.hostname()
     + ', on ' + new Date + '\n')
 }
